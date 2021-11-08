@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import OffBulb from "./assets/images/OFFbulb.jpg";
+import OnBulb from "./assets/images/ONbulb.jpg";
+
+import "./App.css";
 
 function App() {
+  const [bulb, setBulb] = React.useState(false);
+
+  const handleClick = () => {
+    setBulb((prevState) => !prevState);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={bulb ? OnBulb : OffBulb} className="bulb" alt="Bulb on/off" />
+      <p onClick={() => handleClick()}>{bulb ? "OFF" : "ON"}</p>
     </div>
   );
 }
