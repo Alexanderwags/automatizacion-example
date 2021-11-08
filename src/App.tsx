@@ -1,8 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useFirebaseApp } from "reactfire";
 
 function App() {
+  const firebase = useFirebaseApp();
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        {console.log("firebase ", firebase)}
       </header>
     </div>
   );
