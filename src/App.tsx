@@ -1,24 +1,38 @@
 import React from "react";
-import { useFirebaseApp } from "reactfire";
 
 import OffBulb from "./assets/images/OFFbulb.jpg";
 import OnBulb from "./assets/images/ONbulb.jpg";
 
 import "./App.css";
+import firebase from "./firebase";
 
 function App() {
-  const firebase = useFirebaseApp();
   const [bulb, setBulb] = React.useState(false);
 
-  const handleClick = () => {
-    setBulb((prevState) => !prevState);
+  const handleClick = async () => {
+    setBulb((value) => !value);
+    const todoRef = firebase
+      .database()
+      .ref("state")
+      .child("-MnxTUbYg981TJ8ixMl2");
+
+    try {
+      todoRef.update({
+        enc: !bulb,
+      });
+    } catch (error) {}
   };
 
   return (
     <div className="App">
       <img src={bulb ? OnBulb : OffBulb} className="bulb" alt="Bulb on/off" />
-      <p onClick={() => handleClick()}>{bulb ? "OFF" : "ON"}</p>
-      {console.log("firebase ", firebase)}
+      <button
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        {bulb ? "OFF" : "ON"}
+      </button>
     </div>
   );
 }

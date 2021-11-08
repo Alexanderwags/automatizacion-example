@@ -3,16 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { FirebaseAppProvider } from "reactfire";
-import { firebaseConfig } from "./firebase-config";
 
 ReactDOM.render(
   <React.StrictMode>
-    <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+    <>
       <Suspense fallback={() => "Loading..."}>
         <App />
       </Suspense>
-    </FirebaseAppProvider>
+    </>
   </React.StrictMode>,
   document.getElementById("root")
 );
