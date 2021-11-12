@@ -1,7 +1,10 @@
 .Gauge {
   grid-area: gauge;
-  padding: 1rem;
   border: 2px solid blue;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 1rem;
 
   > h1 {
     margin: 0;
@@ -9,8 +12,8 @@
   }
 
   > .gauge-wrapper {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 }
