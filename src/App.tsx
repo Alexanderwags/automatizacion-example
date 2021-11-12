@@ -3,6 +3,7 @@ import firebase from "./firebase";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Bulb from "./components/Bulb/Bulb";
 import Donut from "./components/Donut/Donut";
+import Gauge from "./components/Gauge/Gauge";
 
 import "./App.scss";
 
@@ -28,7 +29,7 @@ function App() {
       <Sidebar />
       <Donut />
       <Bulb handleClick={handleClick} bulb={bulb} />
-      <div className="gauge">Gauge Chart</div>
+      <Gauge />
       <div className="main">Main?</div>
     </div>
   );
