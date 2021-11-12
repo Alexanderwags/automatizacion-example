@@ -4,9 +4,9 @@
   color: black;
   display: grid;
   grid-template-areas:
-    "sidebar header header"
     "sidebar gauge bulb"
-    "sidebar main donut";
+    "sidebar main donut"
+    "sidebar header header";
   grid-template-columns: 250px 1fr 450px;
   column-gap: 15px;
   min-height: 100vh;
