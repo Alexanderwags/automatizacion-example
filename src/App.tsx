@@ -1,10 +1,11 @@
 import React from "react";
 import firebase from "./firebase";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Bulb from "./components/Bulb/Bulb";
 import Donut from "./components/Donut/Donut";
-import Gauge from "./components/Gauge/Gauge";
 import Footer from "./components/Footer/Footer";
+import Gauge from "./components/Gauge/Gauge";
+import Main from "./components/Main/Main";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 import "./App.scss";
 
@@ -31,7 +32,7 @@ function App() {
       <Donut />
       <Bulb handleClick={handleClick} bulb={bulb} />
       <Gauge />
-      <div className="main">Main?</div>
+      <Main />
       <Footer />
     </div>
   );

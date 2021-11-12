@@ -1,0 +1,26 @@
+.Main {
+  grid-area: main;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+
+  > h1 {
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+  > .wrapper {
+    > .item {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      justify-items: flex-start;
+      margin-bottom: 35px;
+      padding: 5px;
+      text-align: justify;
+    }
+  }
+}
