@@ -14,7 +14,7 @@ function App() {
     const todoRef = firebase
       .database()
       .ref("state")
-      .child("-MnxTUbYg981TJ8ixMl2");
+      .child("auto-example17-default-rtdb");
 
     try {
       todoRef.update({
