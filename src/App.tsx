@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Bulb from "./components/Bulb/Bulb";
 import Donut from "./components/Donut/Donut";
 import Gauge from "./components/Gauge/Gauge";
-import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 import "./App.scss";
 
@@ -27,12 +27,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <Sidebar />
       <Donut />
       <Bulb handleClick={handleClick} bulb={bulb} />
       <Gauge />
       <div className="main">Main?</div>
+      <Footer />
     </div>
   );
 }
