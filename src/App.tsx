@@ -2,6 +2,7 @@ import React from "react";
 import firebase from "./firebase";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Bulb from "./components/Bulb/Bulb";
+import Donut from "./components/Donut/Donut";
 
 import "./App.scss";
 
@@ -25,8 +26,8 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <div className="donus">Donus Chart</div>
-      <Bulb handleClick={handleClick} bulb={bulb}/>
+      <Donut />
+      <Bulb handleClick={handleClick} bulb={bulb} />
       <div className="gauge">Gauge Chart</div>
       <div className="main">Main?</div>
     </div>

@@ -1,0 +1,14 @@
+.Donut {
+  grid-area: donut;
+  padding: 1rem;
+  border: 2px solid brown;
+
+  > h1 {
+    margin: 0;
+    text-align: justify;
+  }
+
+  > .donut-wrapper {
+    width: min-content;
+  }
+}
