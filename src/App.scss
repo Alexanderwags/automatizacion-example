@@ -6,25 +6,14 @@
   grid-template-areas:
     "sidebar gauge bulb"
     "sidebar main donus";
+  grid-template-columns: 250px 1fr 400px;
   min-height: 100vh;
   text-align: center;
-
-  > .sidebar {
-    grid-area: sidebar;
-    padding: 1rem;
-    border: 2px solid red;
-  }
 
   > .gauge {
     grid-area: gauge;
     padding: 1rem;
     border: 2px solid blue;
-  }
-
-  > .bulb {
-    grid-area: bulb;
-    padding: 1rem;
-    border: 2px solid green;
   }
 
   > .main {
@@ -38,17 +27,4 @@
     padding: 1rem;
     border: 2px solid brown;
   }
-}
-
-img {
-  box-sizing: border-box;
-  height: 208px;
-  width: 139px;
-}
-
-p {
-  color: black;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100px;
 }

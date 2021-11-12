@@ -1,0 +1,24 @@
+.Bulb {
+  grid-area: bulb;
+  border: 2px solid green;
+  height: 250px;
+  padding: 16px;
+
+  > h1 {
+      margin: 0;
+      text-align: justify;
+  }
+
+  img {
+    box-sizing: border-box;
+    height: 208px;
+    width: 139px;
+  }
+
+  p {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+  }
+}
