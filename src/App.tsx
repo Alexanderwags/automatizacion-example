@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Bulb from "./components/Bulb/Bulb";
 import Donut from "./components/Donut/Donut";
 import Gauge from "./components/Gauge/Gauge";
+import Header from "./components/Header/Header";
 
 import "./App.scss";
 
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Sidebar />
       <Donut />
       <Bulb handleClick={handleClick} bulb={bulb} />
